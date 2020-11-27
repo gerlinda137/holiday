@@ -12,13 +12,15 @@
     content: '';
     background-repeat: no-repeat;
     position: absolute;
-    width: 405px;
-    height: 405px;
+    right: 380px;
+    top: 0;
+    width: 506px;
+    height: 506px;
     background-size: contain;
     background-image: url('../img/top-dot-bg@1x.png');
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url('../img/top-dot-@2x.png');
+      background-image: url('../img/top-dot-bg@2x.png');
     }
   }
 
