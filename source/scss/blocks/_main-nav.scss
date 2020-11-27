@@ -1,0 +1,23 @@
+.main-nav {
+  display: flex;
+  padding-top: 23px;
+  margin-right: auto;
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-right: 43px;
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: $white;
+  }
+
+}

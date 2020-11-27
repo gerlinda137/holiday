@@ -9,26 +9,10 @@
 /*Блоки*/
 //Хедер
 @import "blocks/main-header";
-@import "blocks/logo-and-main-nav-wrapper";
 @import "blocks/main-nav";
-@import "blocks/purchase-options";
+@import "blocks/socials";
 
 //главная
-@import "blocks/page-main";
-@import "blocks/slider";
-@import "blocks/product-name";
-@import "blocks/prices";
-@import "blocks/buy-button";
-@import "blocks/new-items";
-@import "blocks/section-title";
-@import "blocks/price";
-@import "blocks/comments";
-@import "blocks/sale";
-@import "blocks/categories";
-@import "blocks/sale-chairs";
-@import "blocks/sale-card";
+@import "blocks/top";
 
 //Футер
-@import "blocks/main-footer";
-@import "blocks/footer-nav";
-@import "blocks/footer-contacts";

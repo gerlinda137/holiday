@@ -1,0 +1,21 @@
+.main-header {
+  display: flex;
+  padding-top: 31px;
+  margin-bottom: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1206px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__logo-link {
+    margin-right: 30px;
+  }
+}

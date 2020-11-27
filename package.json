@@ -9,10 +9,12 @@
     "browser-sync": "2.26.x",
     "del": "^5.1.0",
     "gulp": "4.0.x",
+    "gulp-imagemin": "^7.1.0",
     "gulp-plumber": "1.2.x",
     "gulp-postcss": "8.0.x",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "2.6.x",
+    "run-sequence": "^2.2.1",
     "stylelint": "^13.3.3",
     "stylelint-config-htmlacademy": "^0.1.4"
   },

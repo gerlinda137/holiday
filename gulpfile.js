@@ -6,6 +6,7 @@ var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var imagemin = require('gulp-imagemin');
 var server = require("browser-sync").create();
 var del = require("del");
 
@@ -19,6 +20,12 @@ gulp.task("css", function () {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+});
+
+gulp.task('images', function(){
+  return gulp.src('source/img/**/*.+(png|jpg|gif|svg)')
+    .pipe(imagemin())
+    .pipe(gulp.dest('build/img'))
 });
 
 gulp.task("clean", function () {
