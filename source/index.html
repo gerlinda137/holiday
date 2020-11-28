@@ -18,19 +18,19 @@
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__link">О нас</a>
+            <a href="#about-us" class="main-nav__link">О нас</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__link">Преимущества</a>
+            <a href="#advantages" class="main-nav__link">Преимущества</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__link">Программа</a>
+            <a href="#programmes" class="main-nav__link">Программа</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__link">Варианты проведения</a>
+            <a href="#variety" class="main-nav__link">Варианты проведения</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="" class="main-nav__link">Для кого</a>
+            <a href="#audience" class="main-nav__link">Для кого</a>
           </li>
         </ul>
       </nav>
@@ -73,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section id="about-us" class="about-us">
       <div class="about-us__container">
         <h2 class="section-title about-us__title">О нас</h2>
         <div class="about-us__txt-container">
@@ -85,7 +85,7 @@
         </div>
       </div>
     </section>
-    <section class="advantages">
+    <section id="advantages" class="advantages">
       <div class="advantages__container">
         <h2 class="section-title advantages__title">Почему именно мы?</h2>
         <p class="advantages__subtitle">Мы несем полную ответственность за:</p>
@@ -174,7 +174,7 @@
         </ul>
       </div>
     </section>
-    <section class="programmes">
+    <section id="programmes" class="programmes">
       <div class="programmes__container">
         <h2 class="programmes__title section-title">Программы</h2>
         <div class="programmes__slider swiper-container">
@@ -311,7 +311,7 @@
       </div>
 
     </section>
-    <section class="variety">
+    <section id="variety" class="variety">
       <div class="variety__container">
         <h2 class="variety__title section-title">Варианты проведения</h2>
         <ul class="variety__list">
@@ -366,7 +366,7 @@
         </ul>
       </div>
     </section>
-    <section class="audience">
+    <section id="audience" class="audience">
       <div class="audience__container">
         <h2 class="audience__title section-title">Для кого</h2>
         <ul class="audience__list">
@@ -409,35 +409,37 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a class="main-footer__link" href="tel:+79176109652">8 (917) 610-96-52</a>
-      <a class="main-footer__logo-link" href="index.html">
-        <img src="img/logo.svg" alt="Логотип" width="74" height="74">
-      </a>
-      <div class="socials main-footer__socials">
-        <a href="t.me/" aria-label="Ссылка на Telegram">
-          <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16 32C24.8387 32 32 24.8387 32 16C32 7.16133 24.8387 0 16 0C7.16133 0 0 7.16133 0 16C0 24.8387 7.16133 32 16 32ZM7.32133 15.6533L22.748 9.70533C23.464 9.44667 24.0893 9.88 23.8573 10.9627L23.8587 10.9613L21.232 23.336C21.0373 24.2133 20.516 24.4267 19.7867 24.0133L15.7867 21.0653L13.8573 22.924C13.644 23.1373 13.464 23.3173 13.0507 23.3173L13.3347 19.2467L20.748 12.5493C21.0707 12.2653 20.676 12.1053 20.2507 12.388L11.0893 18.156L7.14 16.924C6.28267 16.652 6.264 16.0667 7.32133 15.6533Z"
-              fill="#F5EB28" />
-          </svg>
+      <div class="main-footer__links-wrapper">
+        <a class="main-footer__link" href="tel:+79176109652">8 (917) 610-96-52</a>
+        <a class="main-footer__logo-link" href="index.html">
+          <img class="main-footer__logo" src="img/logo.svg" alt="Логотип" width="68" height="68">
         </a>
-        <a href="https://wa.me/79176109652" aria-label="Ссылка на WatsApp">
-          <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0)">
+        <div class="socials main-footer__socials">
+          <a href="t.me/" aria-label="Ссылка на Telegram">
+            <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M15.9914 0.00904089C7.16009 0.0109148 0.00238604 7.17168 0.00425993 16.003C0.00488456 19.061 0.882428 22.0547 2.5327 24.6292L0.0448609 31.084C-0.0876232 31.4273 0.0832757 31.813 0.426573 31.9455C0.50334 31.9751 0.584854 31.9903 0.667118 31.9902C0.743448 31.9906 0.819215 31.9775 0.890985 31.9515L7.55373 29.5729C15.05 34.2417 24.9118 31.9495 29.5806 24.4531C34.2493 16.9568 31.9572 7.09504 24.4608 2.4263C21.9197 0.84361 18.9852 0.00610513 15.9914 0.00904089Z"
-                fill="white" />
-              <path
-                d="M23.615 18.7319C23.615 18.7319 21.9827 17.9324 20.9606 17.3994C19.8039 16.8038 18.4448 17.9191 17.8051 18.5534C16.8097 18.171 15.9004 17.5939 15.1307 16.8557C14.3925 16.0861 13.8153 15.1769 13.433 14.1813C14.0673 13.5404 15.18 12.1825 14.587 11.0259C14.0607 10.0025 13.2545 8.37144 13.2545 8.37013C13.1414 8.14564 12.9116 8.00391 12.6602 8.00366H11.3277C9.38705 8.33884 7.97607 10.0321 7.99631 12.0013C7.99631 14.0934 10.5001 18.1124 12.1885 19.802C13.8769 21.4916 17.8958 23.9942 19.9892 23.9942C21.9584 24.0144 23.6517 22.6034 23.9868 20.6629V19.3303C23.987 19.0762 23.8429 18.8442 23.615 18.7319Z"
-                fill="#309EEB" />
-            </g>
-            <defs>
-              <clippath id="clip1">
-                <rect width="32" height="32" fill="white" />
-              </clippath>
-            </defs>
-          </svg>
-        </a>
+                d="M16 32C24.8387 32 32 24.8387 32 16C32 7.16133 24.8387 0 16 0C7.16133 0 0 7.16133 0 16C0 24.8387 7.16133 32 16 32ZM7.32133 15.6533L22.748 9.70533C23.464 9.44667 24.0893 9.88 23.8573 10.9627L23.8587 10.9613L21.232 23.336C21.0373 24.2133 20.516 24.4267 19.7867 24.0133L15.7867 21.0653L13.8573 22.924C13.644 23.1373 13.464 23.3173 13.0507 23.3173L13.3347 19.2467L20.748 12.5493C21.0707 12.2653 20.676 12.1053 20.2507 12.388L11.0893 18.156L7.14 16.924C6.28267 16.652 6.264 16.0667 7.32133 15.6533Z"
+                fill="#F5EB28" />
+            </svg>
+          </a>
+          <a href="https://wa.me/79176109652" aria-label="Ссылка на WatsApp">
+            <svg width="32" height="32" viewbox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M15.9914 0.00904089C7.16009 0.0109148 0.00238604 7.17168 0.00425993 16.003C0.00488456 19.061 0.882428 22.0547 2.5327 24.6292L0.0448609 31.084C-0.0876232 31.4273 0.0832757 31.813 0.426573 31.9455C0.50334 31.9751 0.584854 31.9903 0.667118 31.9902C0.743448 31.9906 0.819215 31.9775 0.890985 31.9515L7.55373 29.5729C15.05 34.2417 24.9118 31.9495 29.5806 24.4531C34.2493 16.9568 31.9572 7.09504 24.4608 2.4263C21.9197 0.84361 18.9852 0.00610513 15.9914 0.00904089Z"
+                  fill="white" />
+                <path
+                  d="M23.615 18.7319C23.615 18.7319 21.9827 17.9324 20.9606 17.3994C19.8039 16.8038 18.4448 17.9191 17.8051 18.5534C16.8097 18.171 15.9004 17.5939 15.1307 16.8557C14.3925 16.0861 13.8153 15.1769 13.433 14.1813C14.0673 13.5404 15.18 12.1825 14.587 11.0259C14.0607 10.0025 13.2545 8.37144 13.2545 8.37013C13.1414 8.14564 12.9116 8.00391 12.6602 8.00366H11.3277C9.38705 8.33884 7.97607 10.0321 7.99631 12.0013C7.99631 14.0934 10.5001 18.1124 12.1885 19.802C13.8769 21.4916 17.8958 23.9942 19.9892 23.9942C21.9584 24.0144 23.6517 22.6034 23.9868 20.6629V19.3303C23.987 19.0762 23.8429 18.8442 23.615 18.7319Z"
+                  fill="#309EEB" />
+              </g>
+              <defs>
+                <clippath id="clip1">
+                  <rect width="32" height="32" fill="white" />
+                </clippath>
+              </defs>
+            </svg>
+          </a>
+        </div>
       </div>
       <p class="main-footer__text">Мы рады делать вас счастливыми</p>
     </div>
