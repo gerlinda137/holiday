@@ -1,0 +1,114 @@
+.programmes {
+  display: flex;
+  flex-direction: column;
+  // max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  min-width: 0;
+  margin-bottom: 84px;
+
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 405px;
+    height: 405px;
+    background-size: contain;
+    background-image: url('../img/audience-bg@1x.png');
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url('../img/audience-bg@2x.png');
+    }
+
+    left: -66px;
+    top: -7px;
+  }
+
+
+  &__container {
+    // max-width: 1440px;
+    // margin: 0 auto;
+  }
+
+  &__title {
+    padding-top: 54px;
+    margin-bottom: 80px;
+  }
+
+  &__slider {
+    margin-left: 32px;
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__img {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    border-radius: 17px;
+    object-fit: cover;
+  }
+
+  &__card-info {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    height: 100%;
+    width: 44.6%;
+    position: absolute;
+    padding-left: 65px;
+    padding-top: 94px;
+
+    background: linear-gradient(172.48deg, rgba(28, 130, 243, 0.85) 34.62%, rgba(50, 161, 233, 0.85) 133.15%);
+    border-radius: 0px 17px 17px 0px;
+  }
+
+  &__card-txt-container {
+    max-width: 475px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $white;
+    margin-bottom: 36px;
+  }
+
+  &__card-title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 59px;
+    color: $lemon;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 48px;
+
+    &::after {
+      content: '';
+      width: 298px;
+      height: 2px;
+      background-color: $white;
+      position: absolute;
+      left: 0;
+      bottom: -23px;
+    }
+  }
+
+  &__card-txt {
+    margin-bottom: 23px;
+  }
+
+  &__card-link {
+    @include call-button;
+    width: 120px;
+  }
+}

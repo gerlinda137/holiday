@@ -1,4 +1,5 @@
 var mySwiper = new Swiper('.swiper-container', {
-  speed: 400,
-  spaceBetween: 100
+  spaceBetween: 10,
+  slidesPerView: 'auto',
+  spaceBetween: 50,
 });
