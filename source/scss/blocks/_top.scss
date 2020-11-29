@@ -57,7 +57,7 @@
   &__txt-container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 170px;
+    margin-bottom: 140px;
     z-index: 10;
   }
 
@@ -85,15 +85,16 @@
     line-height: 65px;
     text-transform: uppercase;
     color: $lemon;
-    margin-bottom: 7px;
+    margin-bottom: 137px;
   }
 
   &__txt {
     font-size: 26px;
     line-height: 31px;
-    color: $white;
     font-weight: 400;
     margin-bottom: 68px;
+    position: absolute;
+    top: 141px;
   }
 
   &__link {

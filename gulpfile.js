@@ -9,6 +9,7 @@ var autoprefixer = require("autoprefixer");
 var imagemin = require('gulp-imagemin');
 var server = require("browser-sync").create();
 var del = require("del");
+var csso = require('gulp-csso');
 
 gulp.task("css", function () {
   return gulp
@@ -18,6 +19,7 @@ gulp.task("css", function () {
     .pipe(sass())
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemap.write("."))
+    .pipe(csso())
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
