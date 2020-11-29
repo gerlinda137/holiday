@@ -121,5 +121,10 @@
 
   &__link {
     @include call-button;
+
+    &:hover {
+      background-color: $white;
+      transition: .3s;
+    }
   }
 }

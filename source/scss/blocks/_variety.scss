@@ -41,6 +41,12 @@
     width: 100%;
     padding: 37px 20px 32px 20px;
     text-align: center;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.12);
+      transition: .3s;
+    }
 
     &--first {
       background-color: $lemon;

@@ -18,6 +18,16 @@
     font-size: 18px;
     line-height: 21px;
     color: $white;
+    transition: .3s;
+
+    &:hover {
+      color: $mustard;
+      transition: .3s;
+    }
+
+    &:active {
+      color: darken($color: $mustard, $amount: 15%);
+    }
   }
 
 }

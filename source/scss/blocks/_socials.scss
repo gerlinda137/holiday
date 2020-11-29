@@ -1,7 +1,19 @@
 .socials {
   padding-top: 14px;
 
-  a:last-child {
-    margin-left: 27px;
+  &__link {
+    cursor: pointer;
+    transition: .3s;
+
+    :last-child {
+      margin-left: 27px;
+    }
+
   }
+
+  &__link:hover .socials__path {
+    fill: $mustard;
+    transition: .3s;
+  }
+
 }

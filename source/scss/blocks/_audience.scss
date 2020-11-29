@@ -48,6 +48,12 @@
   &__list-item {
     display: flex;
     position: relative;
+    transition: .3s;
+
+    &:hover {
+      transform: scale(1.12);
+      transition: .3s;
+    }
   }
 
   &__img-container {

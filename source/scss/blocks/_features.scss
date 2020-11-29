@@ -28,6 +28,13 @@
       text-align: center;
 
     }
+
+    &:hover {
+
+      .features__item-img {
+        background-color: $white;
+      }
+    }
   }
 
   &__item-img {
