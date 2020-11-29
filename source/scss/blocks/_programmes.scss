@@ -35,20 +35,28 @@
 
   &__title {
     padding-top: 54px;
-    margin-bottom: 80px;
+    margin-bottom: 24px;
   }
 
   &__slider {
-    margin-left: 32px;
+    margin-left: 66px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
 
     .swiper-slide {
       width: auto;
+
+      &:last-child {
+        margin-right: 30px;
+      }
     }
   }
 
   &__card {
     display: flex;
-    flex-direction: column;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 17px;
   }
 
   &__img {
@@ -57,58 +65,50 @@
     display: block;
     border-radius: 17px;
     object-fit: cover;
+    z-index: 5;
   }
 
   &__card-info {
     display: flex;
     flex-direction: column;
-    left: 50%;
-    height: 88%;
-    width: 44.6%;
-    position: absolute;
-    padding-left: 65px;
-    padding-top: 94px;
+    padding-left: 70px;
+    padding-right: 25px;
+    padding-top: 28px;
+    margin-left: -27px;
 
-    background: linear-gradient(172.48deg, rgba(28, 130, 243, 0.85) 34.62%, rgba(50, 161, 233, 0.85) 133.15%);
-    border-radius: 0px 17px 17px 0px;
+    background: $white;
+    border-radius: 17px;
   }
 
   &__card-txt-container {
-    max-width: 475px;
+    max-width: 371px;
     width: 100%;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: $white;
-    margin-bottom: 36px;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 30px;
   }
 
   &__card-title {
     font-weight: 600;
-    font-size: 50px;
-    line-height: 59px;
-    color: $lemon;
+    font-size: 30px;
+    line-height: 35px;
+    color: $navy;
     text-transform: uppercase;
-    position: relative;
-    margin-bottom: 48px;
-
-    &::after {
-      content: '';
-      width: 298px;
-      height: 2px;
-      background-color: $white;
-      position: absolute;
-      left: 0;
-      bottom: -23px;
-    }
+    margin-bottom: 12px;
   }
 
-  &__card-txt {
-    margin-bottom: 23px;
+  &__card-txt:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   &__card-link {
     @include call-button;
     width: 120px;
+    white-space: nowrap;
+    padding: 16px 0;
+    width: 300px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
   }
 }
