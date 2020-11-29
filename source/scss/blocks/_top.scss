@@ -34,6 +34,16 @@
     margin: 0 auto;
     position: relative;
 
+    &::before {
+      content: '';
+      position: absolute;
+      left: -83%;
+      width: 100%;
+      height: 56px;
+      top: 128px;
+      background-color: $white;
+    }
+
     &::after {
       content: '';
       position: absolute;
@@ -95,6 +105,18 @@
     margin-bottom: 68px;
     position: absolute;
     top: 141px;
+
+    &::after {
+      content: '';
+      background-image: url('../img/mask.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      top: -23px;
+      right: -99px;
+    }
   }
 
   &__link {
