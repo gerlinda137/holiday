@@ -24,7 +24,7 @@
 }
 
 
-@media (max-width: $mobile) {
+@media (max-width: $tablet) {
   .main-header {
     &__logo-link {
       order: 1;
@@ -34,6 +34,11 @@
 
     &__socials {
       order: 2;
+
+      .socials__svg {
+        width: 24px;
+        height: 24px;
+      }
     }
 
     &__container {

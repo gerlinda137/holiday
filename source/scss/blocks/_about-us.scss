@@ -31,7 +31,7 @@
     background-image: url('../img/about-us-bg@1x.png');
     position: absolute;
     right: 46%;
-    bottom: 6px;
+    bottom: 60px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url('../img/about-us-bg@2x.png');
@@ -65,14 +65,60 @@
     font-size: 20px;
     line-height: 26px;
     color: $white;
-    padding: 46px 20px 44px 28px;
-    // position: relative;
+    padding: 46px 20px 130px 28px;
+    position: relative;
   }
 
 
   &__txt {
     &:first-child {
       margin-bottom: 26px;
+    }
+
+    &--highlight {
+      background: #F7EB2A;
+      box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      color: $black;
+      font-size: 18px;
+      line-height: 21px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 22px 35px 22px 44px;
+    }
+  }
+
+
+}
+
+
+@media (max-width: $tablet) {
+  .about-us {
+
+    &::after {
+      content: '';
+      width: 83%;
+      // height: 100%;
+      background-image: url('../img/about-us-bg-mobile@1x.png');
+      right: 40%;
+      bottom: 0;
+      top: 23%;
+      transform: translate(50%, -50%);
+
+      @media (min-resolution: 1.5dppx) {
+        background-image: url('../img/about-us-bg-mobile@2x.png');
+      }
+    }
+
+    &__txt-container {
+      margin: 0 auto;
+      padding-bottom: 200px;
+    }
+
+    &__title {
+      margin-bottom: 375px;
     }
   }
 }
