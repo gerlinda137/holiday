@@ -30,4 +30,135 @@
     }
   }
 
+  &__burger {
+    display: none;
+  }
+
+  &__socials {
+    display: none;
+  }
+
+  &__header {
+    display: none;
+  }
+
+}
+
+@media (max-width: $mobile) {
+  .main-nav {
+    order: 0;
+    flex-direction: column;
+    margin-right: 0;
+
+    &__burger {
+      display: block;
+      width: 32px;
+      height: 15px;
+      background-color: transparent;
+      background-image: url('../img/burger.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: none;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &--menu-opened {
+      background-color: $white;
+      position: fixed;
+      width: 90%;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      padding-bottom: 30px;
+      box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 0px 0px 17px 0px;
+      padding-top: 0;
+
+
+      .main-nav__header {
+        display: flex;
+        padding-top: 52px;
+        padding-left: 25px;
+        padding-bottom: 23px;
+        flex-direction: column;
+        width: 100%;
+        background: linear-gradient(115.95deg, #015DFE 11.48%, #33A6E9 83.08%);
+      }
+
+      .main-nav__title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 18px;
+        color: $lemon;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 53px;
+
+        &::before {
+          content: '';
+          background-image: url('../img/logo.svg');
+          position: absolute;
+          width: 44px;
+          height: 49px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          left: 0;
+          top: -21px;
+        }
+      }
+
+      .main-nav__burger {
+        display: block;
+        position: absolute;
+        background-color: $white;
+        width: 52px;
+        height: 42px;
+        border-radius: 0px 0px 0px 21px;
+        border: none;
+        right: 0;
+        top: 0;
+
+        &::after {
+          content: '';
+          background-image: url('../img/close-btn.svg');
+          width: 14px;
+          height: 18px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-44%, -44%);
+        }
+      }
+
+      .main-nav__list {
+        display: block;
+        padding-left: 27px;
+        padding-top: 27px;
+
+      }
+
+      .main-nav__list-item:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      .main-nav__link {
+        color: $black;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+      }
+
+      .main-nav__socials {
+        display: flex;
+      }
+
+    }
+
+
+  }
 }

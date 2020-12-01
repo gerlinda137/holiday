@@ -16,7 +16,12 @@
         <img src="img/logo.svg" alt="Логотип" width="66" height="73">
       </a>
       <nav class="main-nav">
-        <ul class="main-nav__list">
+        <button class="main-nav__burger" type="button" aria-label="открыть меню">
+        </button>
+        <header class="main-nav__header">
+          <h2 class="main-nav__title">Сегодня праздник</h2>
+        </header>
+        <ul class="main-nav__list main-nav__list--hidden">
           <li class="main-nav__list-item">
             <a href="#about-us" class="main-nav__link">О нас</a>
           </li>
@@ -24,7 +29,7 @@
             <a href="#advantages" class="main-nav__link">Преимущества</a>
           </li>
           <li class="main-nav__list-item">
-            <a href="#programmes" class="main-nav__link">Программа</a>
+            <a href="#programmes" class="main-nav__link">Программы</a>
           </li>
           <li class="main-nav__list-item">
             <a href="#variety" class="main-nav__link">Варианты проведения</a>
@@ -33,6 +38,34 @@
             <a href="#audience" class="main-nav__link">Для кого</a>
           </li>
         </ul>
+
+        <div class="socials main-nav__socials">
+          <a class="socials__link" href="https://teleg.run/misha100mm" aria-label="Ссылка на Telegram">
+            <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11.9579 23.9158C18.5636 23.9158 23.9158 18.5636 23.9158 11.9579C23.9158 5.35215 18.5636 0 11.9579 0C5.35215 0 0 5.35215 0 11.9579C0 18.5636 5.35215 23.9158 11.9579 23.9158ZM5.47173 11.6988L17.0011 7.25346C17.5363 7.06014 18.0036 7.384 17.8302 8.19315L17.8312 8.19215L15.8681 17.4406C15.7226 18.0963 15.333 18.2557 14.7879 17.9468L11.7985 15.7436L10.3565 17.1327C10.1971 17.2921 10.0626 17.4266 9.75366 17.4266L9.96591 14.3844L15.5064 9.37897C15.7476 9.16672 15.4526 9.04714 15.1347 9.2584L8.28782 13.5692L5.33621 12.6485C4.69547 12.4452 4.68152 12.0077 5.47173 11.6988Z"
+                fill="#005BFF" />
+            </svg>
+
+          </a>
+          <a class="socials__link" href="https://wa.me/79176109652" aria-label="Ссылка на WatsApp">
+            <svg width="24" height="25" viewbox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0)">
+                <path
+                  d="M12.0355 0.7544C5.43521 0.755801 0.0857676 6.10753 0.0871681 12.7078C0.0876349 14.9932 0.743483 17.2306 1.97685 19.1547L0.117512 23.9789C0.0184976 24.2354 0.146222 24.5237 0.402791 24.6227C0.460164 24.6448 0.521086 24.6562 0.582567 24.6561C0.639614 24.6564 0.69624 24.6466 0.749879 24.6272L5.7294 22.8495C11.3319 26.3388 18.7023 24.6257 22.1916 19.0231C25.6808 13.4206 23.9678 6.05025 18.3652 2.56098C16.4661 1.37813 14.2729 0.752206 12.0355 0.7544Z"
+                  fill="#005BFF" />
+                <path
+                  d="M17.7326 14.747C17.7326 14.747 16.5127 14.1494 15.7488 13.7511C14.8844 13.3059 13.8686 14.1395 13.3905 14.6136C12.6465 14.3278 11.967 13.8964 11.3918 13.3448C10.84 12.7696 10.4087 12.0901 10.123 11.346C10.597 10.867 11.4286 9.85214 10.9854 8.98771C10.592 8.22286 9.98954 7.00387 9.98954 7.00289C9.905 6.83511 9.73325 6.72919 9.54536 6.729H8.54947C7.09913 6.9795 6.04461 8.24498 6.05973 9.71671C6.05973 11.2803 7.93102 14.2839 9.19285 15.5467C10.4547 16.8095 13.4583 18.6798 15.0228 18.6798C16.4946 18.695 17.7601 17.6404 18.0106 16.1901V15.1942C18.0107 15.0043 17.9029 14.8309 17.7326 14.747Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <clippath id="clip0">
+                  <rect width="23.9158" height="23.9158" fill="white" transform="translate(0.0839844 0.747314)" />
+                </clippath>
+              </defs>
+            </svg>
+          </a>
+        </div>
       </nav>
       <div class="socials main-header__socials">
         <a class="socials__link" href="https://teleg.run/misha100mm" aria-label="Ссылка на Telegram">
@@ -55,7 +88,7 @@
                 fill="#309EEB" />
             </g>
             <defs>
-              <clippath id="clip0">
+              <clippath id="clip1">
                 <rect width="32" height="32" fill="white" />
               </clippath>
             </defs>
@@ -68,7 +101,7 @@
     <section class="top">
       <div class="top__container">
         <div class="top__txt-container">
-          <p class="top__subtitle">Мгновенно организуем праздник вашей мечты</p>
+          <p class="top__subtitle">Организация праздников в Санкт-Петербурге и Краснодаре</p>
           <h1 class="top__title">Сегодня праздник</h1>
           <strong class="top__txt">Не отменят</strong>
           <a class="top__link" href="tel:+79176109652">Позвонить</a>
@@ -257,7 +290,7 @@
                   <p class="programmes__card-txt">Игры, которые нашли популярность
                     на американских вечеринках благодаря
                     лёгкости и азартности.</p>
-                  <p class="programmes__card-txt"> Участникам придется сразиться ловкости
+                  <p class="programmes__card-txt"> Участникам придется сразиться в ловкости
                     и находчивости.</p>
                   <p class="programmes__card-txt">В качестве «реквизита»
                     выступит обычный мячик для ping-pong,
@@ -435,7 +468,7 @@
                   fill="#309EEB" />
               </g>
               <defs>
-                <clippath id="clip1">
+                <clippath id="clip2">
                   <rect width="32" height="32" fill="white" />
                 </clippath>
               </defs>

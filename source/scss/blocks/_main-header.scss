@@ -11,12 +11,34 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    max-width: 1206px;
+    max-width: 1246px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
     margin: 0 auto;
   }
 
   &__logo-link {
     margin-right: 30px;
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .main-header {
+    &__logo-link {
+      order: 1;
+      margin-right: 0;
+      margin-left: 90px;
+    }
+
+    &__socials {
+      order: 2;
+    }
+
+    &__container {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
   }
 }
