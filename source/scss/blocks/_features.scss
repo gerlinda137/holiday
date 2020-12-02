@@ -96,19 +96,34 @@
 
 @media (max-width: $mobile) {
   .features {
-    flex-wrap: nowrap;
-    margin: 0;
-    max-width: none;
-    width: 100%;
-    justify-content: unset;
+
+    // width: 100%;
+
     overflow: hidden;
 
     &__wrapper {
+      flex-wrap: nowrap;
+      justify-content: unset;
+      margin: 0;
+      max-width: none;
       width: 100%;
     }
 
     &__item {
       width: auto;
+    }
+
+    &__item-title {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    &__txt {
+      font-size: 15px;
+      line-height: 18px;
+      min-width: 210px;
+      width: 100%;
     }
   }
 }

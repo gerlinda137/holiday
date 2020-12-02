@@ -137,9 +137,10 @@
 
       &::after {
         content: '';
+        top: 235px;
         position: absolute;
         width: 83%;
-        height: auto;
+        height: 100%;
         background-image: url('../img/top-bg-mobile@1x.png');
 
         @media (min-resolution: 1.5dppx) {
@@ -173,5 +174,68 @@
       }
     }
 
+  }
+}
+
+
+@media (max-width: $mobile) {
+  .top {
+    padding-top: 100px;
+    border-radius: 0px 0px 0px 79px;
+
+    &__container {
+      padding-bottom: 115px;
+
+      &::before {
+        height: 30px;
+        left: -33%;
+        top: 94px;
+      }
+
+      ::after {
+        top: 235px;
+        width: 300px;
+        height: 290px;
+      }
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+      margin-bottom: 85px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      margin-bottom: 12px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &__txt {
+      font-size: 14px;
+      line-height: 17px;
+      left: 31%;
+      top: 102px;
+
+      &::after {
+        width: 45px;
+        height: 45px;
+        top: -15px;
+        right: -56px;
+      }
+    }
+
+    &__link {
+      width: 246px;
+      padding: 10px 76px;
+      font-size: 16px;
+      line-height: 19px;
+    }
   }
 }

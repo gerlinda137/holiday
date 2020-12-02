@@ -122,3 +122,20 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .about-us {
+    &__txt-container {
+      width: 100%;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &__txt {
+      &--highlight {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

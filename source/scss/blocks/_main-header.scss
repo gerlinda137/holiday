@@ -47,3 +47,18 @@
     }
   }
 }
+
+@media (max-width: $mobile) {
+  .main-header {
+    &__logo-link {
+      img {
+        width: 44px;
+        height: 49px;
+      }
+    }
+
+    &__socials {
+      flex-wrap: nowrap;
+    }
+  }
+}

@@ -53,3 +53,10 @@ p {
   line-height: 41px;
   text-align: center;
 }
+
+@media (max-width: $mobile) {
+  .section-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

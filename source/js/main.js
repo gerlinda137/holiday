@@ -69,8 +69,8 @@ function checkCreateAdvantagesMobileSwiper() {
         // direction: 'vertical',
 
         // If we need pagination
-        spaceBetween: 20,
-        // slidesPerView: 'auto',
+        spaceBetween: 30,
+        slidesPerView: 'auto',
         // width: 400,
         // centeredSlides: true,
         // visibilityFullFit: true,
