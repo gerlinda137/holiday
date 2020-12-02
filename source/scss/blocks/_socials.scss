@@ -4,11 +4,10 @@
   &__link {
     cursor: pointer;
     transition: .3s;
+  }
 
-    :last-child {
-      margin-left: 27px;
-    }
-
+  &__link:last-child svg {
+    margin-left: 27px;
   }
 
   &__link:hover .socials__path {

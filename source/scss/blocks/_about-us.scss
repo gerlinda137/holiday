@@ -1,6 +1,6 @@
 .about-us {
   display: flex;
-  padding-bottom: 115px;
+  padding-bottom: 30px;
   position: relative;
   overflow-x: hidden;
 
@@ -31,7 +31,7 @@
     background-image: url('../img/about-us-bg@1x.png');
     position: absolute;
     right: 46%;
-    bottom: 60px;
+    bottom: 8px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url('../img/about-us-bg@2x.png');
@@ -65,14 +65,14 @@
     font-size: 20px;
     line-height: 26px;
     color: $white;
-    padding: 46px 20px 130px 28px;
+    padding: 46px 22px 138px 28px;
     position: relative;
   }
 
 
   &__txt {
     &:first-child {
-      margin-bottom: 26px;
+      margin-bottom: 17px;
     }
 
     &--highlight {
@@ -87,6 +87,10 @@
       left: 0;
       width: 100%;
       padding: 22px 35px 22px 44px;
+
+      br {
+        display: none;
+      }
     }
   }
 
@@ -125,17 +129,59 @@
 
 @media (max-width: $mobile) {
   .about-us {
+    padding-bottom: 0;
+
+    &::before {
+      content: none;
+    }
+
+    &::after {
+      width: 377px;
+      right: 47%;
+      top: 170px;
+      height: 288px;
+    }
+
+    &__container {
+      padding-left: 27px;
+      padding-right: 27px;
+      padding-bottom: 37px;
+    }
+
     &__txt-container {
       width: 100%;
       font-size: 14px;
       line-height: 17px;
+      padding-top: 80px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 192px;
+
     }
 
     &__txt {
+      &:first-child {
+        margin-bottom: 16px;
+      }
+
       &--highlight {
         font-size: 14px;
         line-height: 17px;
+        padding: 22px 19px 30px 14px;
+
+        br {
+          display: block;
+        }
       }
+
+      br:first-child {
+        display: none;
+      }
+    }
+
+
+    &__title {
+      margin-bottom: 193px;
     }
   }
 }
