@@ -162,3 +162,9 @@
 
   }
 }
+
+@media (max-width: $mobile) {
+  .main-nav {
+    padding-top: 8px;
+  }
+}

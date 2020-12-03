@@ -1,3 +1,18 @@
+const moreButtons = document.querySelectorAll('.programmes__card-mobile-preview-btn');
+const cardInfos = document.querySelectorAll('.programmes__card-info');
+const previews = document.querySelectorAll('.programmes__card-mobile-preview');
+
+for (let i = 0; i < moreButtons.length; i++) {
+  const moreButton = moreButtons[i];
+  const cardInfo = cardInfos[i];
+  const preview = previews[i];
+  moreButton.onclick = function () {
+    preview.classList.add('programmes__card-mobile-preview--hidden');
+    cardInfo.classList.add('programmes__card-info--visible');
+  }
+
+}
+
 const pageWidthMobileThreshold = 767;
 
 var mySwiper = new Swiper('.programmes__slider', {

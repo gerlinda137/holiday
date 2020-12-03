@@ -135,22 +135,13 @@
     &__container {
       align-items: center;
 
-      &::after {
-        content: '';
-        top: 235px;
-        position: absolute;
-        width: 83%;
-        height: 100%;
-        background-image: url('../img/top-bg-mobile@1x.png');
-
-        @media (min-resolution: 1.5dppx) {
-          background-image: url('../img/top-bg-mobile@2x.png');
-        }
-
-      }
 
       &::before {
         left: -38%;
+      }
+
+      &::after {
+        content: none;
       }
     }
 
@@ -194,11 +185,17 @@
       }
 
       &::after {
+        content: '';
         top: 235px;
         width: 300px;
         height: 290px;
         right: 50%;
         transform: translate(50%, 0);
+        background-image: url('../img/top-bg-mobile@1x.png');
+
+        @media (min-resolution: 1.5dppx) {
+          background-image: url('../img/top-bg-mobile@2x.png');
+        }
       }
     }
 
