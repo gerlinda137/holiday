@@ -80,7 +80,7 @@
 
 
     &__item {
-      margin-left: 35px;
+      margin-left: 0;
       margin-bottom: 50px;
 
       &:last-child {
@@ -113,6 +113,10 @@
       width: auto;
       margin-bottom: 35px;
       margin-left: 30px;
+
+      &:nth-child(3) {
+        padding-left: 50px;
+      }
     }
 
     &__item-img {

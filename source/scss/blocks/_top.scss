@@ -58,7 +58,7 @@
       background-repeat: no-repeat;
       background-size: contain;
       right: 22px;
-      top: -65px;
+      top: -30px;
 
     }
 
@@ -180,7 +180,7 @@
 
       &::before {
         height: 30px;
-        left: -33%;
+        left: -52%;
         top: 94px;
       }
 
@@ -243,5 +243,23 @@
       font-size: 16px;
       line-height: 19px;
     }
+  }
+}
+
+@media (max-width: 605px) {
+  .top__container::before {
+    left: -48%;
+  }
+}
+
+@media (max-width: 485px) {
+  .top__container::before {
+    left: -42%;
+  }
+}
+
+@media (max-width: 377px) {
+  .top__container::before {
+    left: -35%;
   }
 }
