@@ -44,6 +44,7 @@
     &__container {
       padding-left: 28px;
       padding-right: 28px;
+      align-items: center;
     }
   }
 }
@@ -59,6 +60,12 @@
 
     &__socials {
       flex-wrap: nowrap;
+      padding-top: 8px;
+
+      .socials__link:last-child svg {
+        margin-left: 19px;
+      }
+
     }
   }
 }

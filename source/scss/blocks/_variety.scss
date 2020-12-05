@@ -26,11 +26,9 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
+    display: flex;
     justify-content: space-between;
     column-gap: 37px;
-    padding-right: 30px;
     width: 100%;
 
     margin-bottom: 81px;
@@ -108,6 +106,10 @@
     &__txt {
       font-size: 16px;
     }
+
+    &__subtitle {
+      font-size: 25px;
+    }
   }
 }
 
@@ -117,37 +119,75 @@
     &__container {
       padding-right: 0;
       padding-left: 0;
+      padding-top: 35px;
 
     }
 
     &__wrapper {
       overflow: hidden;
+      padding-left: 28px;
 
     }
 
     &__list {
-      display: flex;
-      margin-left: 45px;
+      margin-left: 0;
+      margin-bottom: 44px;
+      column-gap: 0;
     }
 
     &__list-item {
       width: auto;
       max-width: 256px;
       max-height: 256px;
+      padding-top: 28px;
 
       svg {
-        margin-bottom: 5px;
+        margin-bottom: 23px;
+      }
+
+      &:hover {
+        transform: unset;
+      }
+
+      &--first {
+        svg {
+          width: 76px;
+          height: 50px;
+        }
+      }
+
+      &--second {
+        svg {
+          width: 55px;
+          height: 50px;
+        }
+
+        .variety__subtitle {
+          margin-bottom: 15px;
+        }
+
+      }
+
+      &--third {
+        svg {
+          width: 56px;
+          height: 50px;
+        }
+
       }
     }
 
     &__title {
       font-size: 20px;
       line-height: 24px;
+      margin-bottom: 31px;
     }
 
     &__subtitle {
       font-size: 20px;
       line-height: 24px;
+      padding-top: 18px;
+      padding-bottom: 15px;
     }
 
     &__txt {

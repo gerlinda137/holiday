@@ -49,6 +49,7 @@
     order: 0;
     flex-direction: column;
     margin-right: 0;
+    padding-top: 0;
 
     &__burger {
       display: block;
@@ -68,7 +69,7 @@
     &--menu-opened {
       background-color: $white;
       position: fixed;
-      width: 90%;
+      width: 100%;
       top: 0;
       left: 0;
       z-index: 10;
@@ -155,6 +156,9 @@
 
       .main-nav__socials {
         display: flex;
+        padding-left: 25px;
+        padding-top: 40px;
+
       }
 
     }
@@ -164,7 +168,5 @@
 }
 
 @media (max-width: $mobile) {
-  .main-nav {
-    padding-top: 8px;
-  }
+  .main-nav {}
 }

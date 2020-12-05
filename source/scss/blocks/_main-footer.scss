@@ -71,3 +71,82 @@
   }
 
 }
+
+@media (max-width: $mobile) {
+  .main-footer {
+
+    &__container {
+      padding-top: 4px;
+    }
+
+    &__links-wrapper {
+      position: relative;
+      margin-bottom: 88px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: $white;
+        width: 141px;
+        bottom: 30%;
+        left: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        background-color: $white;
+        width: 141px;
+        bottom: 30%;
+        right: 0;
+      }
+    }
+
+    &__link {
+      font-family: $montserrat;
+      font-size: 15px;
+      font-weight: 600;
+      white-space: nowrap;
+      padding-left: 0;
+      position: absolute;
+      right: 57%;
+      bottom: -47px;
+
+      &::after {
+        content: none;
+      }
+    }
+
+    &__logo-link {
+      margin: 0 auto;
+    }
+
+    &__logo {
+      width: 44px;
+      height: 49px;
+    }
+
+    &__socials {
+      padding-right: 0;
+      position: absolute;
+      left: 66%;
+      bottom: -47px;
+
+      &::after {
+        content: none;
+      }
+
+      svg {
+        width: 29px;
+        height: 29px;
+      }
+    }
+
+    &__text {
+      font-size: 15px;
+      margin: 0 auto;
+    }
+  }
+}

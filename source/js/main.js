@@ -65,7 +65,6 @@ function checkCreateVarietyMobileSwiper() {
   if (window.innerWidth <= pageWidthMobileThreshold) {
 
     if (varietySwiper === null) {
-      console.log('create');
 
       varietySwiper = new Swiper(variety, {
         spaceBetween: 30,
@@ -84,5 +83,32 @@ function checkCreateVarietyMobileSwiper() {
   }
 }
 
+const audience = document.querySelector('.audience__slider');
+
+let audienceSwiper = null;
+
+function checkCreateAudienceMobileSwiper() {
+  if (window.innerWidth <= pageWidthMobileThreshold) {
+
+    if (audienceSwiper === null) {
+
+      audienceSwiper = new Swiper(audience, {
+        spaceBetween: 30,
+        slidesPerView: 'auto',
+        wrapperClass: 'audience__wrapper',
+        slideClass: 'audience__list-item',
+
+    })
+    }
+
+  } else {
+    if (audienceSwiper !== null) {
+      audienceSwiper.destroy();
+      audienceSwiper = null;
+    }
+  }
+}
+
 checkCreateVarietyMobileSwiper();
-window.addEventListener('resize', checkCreateAdvantagesMobileSwiper, checkCreateVarietyMobileSwiper);
+checkCreateAudienceMobileSwiper();
+window.addEventListener('resize', checkCreateAdvantagesMobileSwiper, checkCreateVarietyMobileSwiper,checkCreateAudienceMobileSwiper);
