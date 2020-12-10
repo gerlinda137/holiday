@@ -10,7 +10,10 @@ for (let i = 0; i < moreButtons.length; i++) {
     preview.classList.add('programmes__card-mobile-preview--hidden');
     cardInfo.classList.add('programmes__card-info--visible');
   }
-
+    cardInfo.onclick = function () {
+      cardInfo.classList.remove('programmes__card-info--visible');
+      preview.classList.remove('programmes__card-mobile-preview--hidden');
+    }
 }
 
 const pageWidthMobileThreshold = 767;
@@ -22,10 +25,19 @@ var mySwiper = new Swiper('.programmes__slider', {
 
 let nav = document.querySelector('.main-nav');
 let burger = nav.querySelector('.main-nav__burger');
+let navLinks = nav.querySelectorAll('.main-nav__link');
 
 burger.onclick = function() {
   nav.classList.toggle('main-nav--menu-opened')
 };
+
+if (window.innerWidth <= pageWidthMobileThreshold) {
+  navLinks.forEach((element) => {
+    element.onclick = function() {
+      nav.classList.remove('main-nav--menu-opened');
+    }
+  })
+}
 
 
 const advantages = document.querySelector('.features');
@@ -39,7 +51,7 @@ function checkCreateAdvantagesMobileSwiper() {
     if (advantagesSwiper === null) {
 
       advantagesSwiper = new Swiper(advantages, {
-        spaceBetween: 5,
+        // spaceBetween: 5,
         slidesPerView: 'auto',
         wrapperClass: 'features__wrapper',
 
