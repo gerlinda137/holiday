@@ -80,6 +80,7 @@
     padding-left: 55px;
     padding-right: 55px;
     opacity: 0.5;
+
   }
 
   &__credits-title {
@@ -92,6 +93,8 @@
   &__credits-links {
     display: flex;
     justify-content: space-between;
+    max-width: 82px;
+    margin: 0 auto;
   }
 
   &__credits-link {

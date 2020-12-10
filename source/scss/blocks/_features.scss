@@ -33,12 +33,6 @@
 
     }
 
-    &:hover {
-
-      .features__item-img {
-        background-color: $white;
-      }
-    }
   }
 
   &__item-img {
@@ -114,9 +108,9 @@
       margin-bottom: 35px;
       margin-left: 30px;
 
-      &:nth-child(3) {
-        padding-left: 50px;
-      }
+      // &:nth-child(3) {
+      //   padding-left: 50px;
+      // }
     }
 
     &__item-img {
